@@ -32,9 +32,9 @@ $(LIB_DIR):
 	mkdir -p $@
 
 # targets
-.PHONY: all dev build run clean
+.PHONY: all dev build clean
 
-all: $(MATH_LIB) $(PROGRAM) $(HELLOWORLD_CPP) $(TEST_PROGRAM)
+all: $(MATH_LIB) $(PROGRAM) $(HELLOWORLD_CPP)
 
 dev:
 	cmake -G Ninja -DCMAKE_BUILD_TYPE=Debug -S . -B build && ninja -C build
