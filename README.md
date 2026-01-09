@@ -46,6 +46,21 @@ Also this pathes **must be added** to the **PATH** environment ([How to: Add Too
 
 ```bash
 .
+├── .editorconfig # the project common settings (as for now it's as in RSSchool recommended
+│                 # check the [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) for more.
+│                 # **notice**: `EditorConfig` IDE extension required!);
+├── .gitignore  # exlude `node_modules` and a few more folders from git watching
+│               # (like `dist` etc, check the file for more);
+├── .husky  # folder for husky's hooks (with hooks config);
+│   └── _
+├── .vscode # VSCode settings
+│   ├── c_cpp_properties.json
+│   ├── launch.json # settings for `C/C++` code debugging;
+│   └── settings.json # settings for appropraite work of `C/C++ core` in the project at first and then
+│                     # (optionally) the `ESlint` and `Prettier` VSCode extensions in a project
+│                     # (with a help of `Format Code Action` extension). There're settings and scripts for
+│                     # a usage of the configs (and ignore) files in the project (i.e. links to ones config files)
+│                     # and there's `end-of-line(EOF)` property that is set to `LF` (i.e. `"files.eol": "\n"`);
 ├── CMakeLists.txt  # primary CMake config with base settings for entire project
 ├── configs # project tools configs
 │   ├── CMake # CMake settings for build
@@ -65,14 +80,14 @@ Also this pathes **must be added** to the **PATH** environment ([How to: Add Too
 │       └── prettier.config.js
 ├── LICENSE # project license
 ├── Makefile  # primary Make config with base settings for entire project (from one sid is alternative to CMake
-├             # from another => convenient way to produce "dev" or "build" bundling, or to "clean" (wipe)
-├             #  the "build" folder)
+│             # from another => convenient way to produce "dev" or "build" bundling, or to "clean" (wipe)
+│             #  the "build" folder)
 ├── package.json  # optional, project base descriptions and GitHub data, JS / TS packages to install
-├                 #  (**note:** `node.js` is required for installations)
+│                 #  (**note:** `node.js` is required for installations)
 ├── package-lock.json # optional, specific for `node.js` installed packages
 ├── README.md # project description
 └── src # examples of CMake and Make usage. Use personal `CMakeLists.txt` or `Makefile.mk` for every submodule
-        # like below one
+    │   # like below one
     ├── CMakeLists.txt  # submodule's CMake config (use like this one)
     ├── helloworld_cpp.cpp  # cxx code example to build
     ├── main.c  # c code example to build
