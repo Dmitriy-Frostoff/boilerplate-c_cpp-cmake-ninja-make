@@ -144,7 +144,7 @@ and run it manually via `VSCode` command `Ctrl + Shift + P` => `CMake: Configure
 do the next steps:
 from `cwd`
 
-- check that `build` folder exist before that!
+- nevermind if `build` folder exist before or not
 
 ```bash
 cmake -G Ninja -S . -B build
@@ -152,7 +152,7 @@ cmake -G Ninja -S . -B build
 
 where `-S .` means the source directory, `-B build` where to place `build` directory
 
-- build the binaries via got above instructions
+- build the binaries via got from above instructions
 
 ```bash
 ninja -C build
@@ -170,13 +170,7 @@ or
 make build
 ```
 
-or
-
-```bash
-make clean
-```
-
-where `dev`, `build`, `clean` are purposes defined in the `Makefile` (i.e. in the `cwd`)
+where `dev`, `build` are purposes defined in the `Makefile` (i.e. in the `cwd`)
 
 ---
 
@@ -190,7 +184,7 @@ make all
 > main syntax for `make` running is `make purpose_name`, so currently `all` is a purpose
 > never just run `make` without purposes after it (i.e. auto purpose choosing)!!!
 
-- run built `*.exe` file
+- run built binary file, e.g.
 
 ```bash
 build/bin/helloworld_cpp.exe
@@ -199,7 +193,7 @@ build/bin/helloworld_cpp.exe
 
 ### Integration with [`Connections`](#Connections) links:
 
-To integrate the boilerplate do the following steps (**note**: copy the defined below project structure as is!!!):
+To integrate the boilerplate do the following steps (**note**: copy the defined folders and files correspondingly to source one pathes!!!):
 
 - copy `configs/CMake`, check the pathes in the `tasks.json` (i.e. `C:\\Tools\\msys64\\ucrt64\\bin\\clang.exe` to suite your system);
 - add to the `.vscode/settings.json` code below and check the pathes (e.g.`C:\\Tools\\msys64\\ucrt64\\bin`)
@@ -328,7 +322,7 @@ make clean
 
 - [GNU Make official website](https://www.gnu.org/software/make/);
 - [GNU Make official manual](https://www.gnu.org/software/make/manual/make.html);
-- [GNU Make official repo](git://git.savannah.gnu.org/make);
+- GNU Make official repo `git://git.savannah.gnu.org/make`;
 
 #### Connections:
 
