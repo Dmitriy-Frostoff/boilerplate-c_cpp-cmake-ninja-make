@@ -1,7 +1,7 @@
 export default {
   extends: ['@commitlint/config-conventional'],
   rules: {
-    'header-max-length': [2, 'always', 200],
+    'header-max-length': [2, 'always', 250],
     'type-enum': [
       2,
       'always',

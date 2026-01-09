@@ -30,10 +30,7 @@
     "clang++",
     "CMake",
     "Ninja",
-    "LLVM",
-    "clang-tidy",
-    "clang-format",
-    "clangd"
+    "LLVM"
   ],
   "repository": {
     "type": "git",

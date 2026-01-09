@@ -36,26 +36,6 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[c]": {
-    "editor.formatOnSave": true,
-    // "editor.defaultFormatter": "ms-vscode.cpptools",
-    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-  },
-  "[cpp]": {
-    "editor.formatOnSave": true,
-    // "editor.defaultFormatter": "ms-vscode.cpptools",
-    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-  },
-  "clangd.path": "C:\\Tools\\msys64\\ucrt64\\bin\\clangd.exe",
-  "clangd.arguments": [
-    "--log=verbose",
-    "--pretty",
-    "--background-index",
-    "--clang-tidy",
-    "--header-insertion=iwyu",
-    "--completion-style=detailed",
-    "--enable-config"
-  ],
   "C_Cpp.intelliSenseEngine": "disabled",
   "C_Cpp.default.compilerPath": "C:\\Tools\\msys64\\ucrt64\\bin",
   "cmake.generator": "Ninja",
@@ -63,7 +43,6 @@
   "files.eol": "\n",
   "cmake.additionalCompilerSearchDirs": ["C:\\Tools\\msys64\\ucrt64\\bin"],
   "cmake.additionalKits": ["C:\\Tools\\msys64\\ucrt64\\bin"],
-  "clangd.checkUpdates": true,
   "cmake.preferredGenerators": [],
   "cmake.sourceDirectory": "${workspaceFolder}",
   "cmake.automaticReconfigure": true,

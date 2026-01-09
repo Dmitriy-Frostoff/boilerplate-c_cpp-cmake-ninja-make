@@ -1,29 +1,8 @@
 {
   "env": {
-    "myIncludePath": ["${workspaceFolder}/src", "${workspaceFolder}/tests"]
+    "myIncludePath": ["${workspaceFolder}/src"]
   },
-  "configurations": [
-    {
-      "name": "clang",
-      "intelliSenseMode": "windows-clang-x64",
-      "compilerPath": "C:\\Tools\\msys64\\ucrt64\\bin\\clang.exe",
-      "compileCommands": "${workspaceFolder}/build/compile_commands.json",
-      "cStandard": "c23",
-      "browse": {
-        "path": ["${workspaceFolder}/src"]
-      }
-    },
-    {
-      "name": "clang++",
-      "intelliSenseMode": "windows-clang-x64",
-      "compilerPath": "C:\\Tools\\msys64\\ucrt64\\bin\\clang++.exe",
-      "compileCommands": "${workspaceFolder}/build/compile_commands.json",
-      "cppStandard": "c++23",
-      "browse": {
-        "path": ["${workspaceFolder}/src"]
-      }
-    }
-  ],
+  "configurations": [],
   "version": 4,
   "enableConfigurationSquiggles": true
 }

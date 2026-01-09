@@ -1,0 +1,4 @@
+# archieve `math_utils_lib`
+add_library(math_utils_lib STATIC math_utils.c)
+target_include_directories(math_utils_lib PUBLIC .)
+target_compile_options(math_utils_lib PUBLIC -Wall -Wextra -g)
