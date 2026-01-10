@@ -343,4 +343,6 @@ make clean
 
 - [boilerplate-c_cpp-compilers_linters_formatters](https://github.com/Dmitriy-Frostoff/boilerplate-c_cpp-compilers_linters_formatters);
 
-#### done: January 09, 2026
+- [boilerplate-c_cpp-testing-gtest](https://github.com/Dmitriy-Frostoff/boilerplate-c_cpp-testing-gtest);
+
+#### done: January 10, 2026
